@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="#81CD2F"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/prayer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/cairo_bold"
+            android:layout_gravity="end|center_vertical"
+            android:text="العصر" />
+
+        <TextView
+            android:id="@+id/prayer_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/cairo_bold"
+            android:layout_gravity="start|center_vertical"
+            android:text="11:20 م" />
+    </com.google.android.material.card.MaterialCardView>
+</layout>

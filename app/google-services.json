@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "444619715923",
+    "project_id": "muslimway-ae200",
+    "storage_bucket": "muslimway-ae200.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444619715923:android:b9d765cfb0280758cedda6",
+        "android_client_info": {
+          "package_name": "com.example.muslimway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444619715923-6jktv7fvpj1kaejmal1f97poa33uha25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqDm06CB9zYa7bHEgWF9zlr2nEOdqA82I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "444619715923-6jktv7fvpj1kaejmal1f97poa33uha25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

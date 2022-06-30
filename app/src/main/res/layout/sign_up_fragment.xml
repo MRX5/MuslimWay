@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.ui.sign_up.SignUpFragment">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/cairo_bold"
+            android:text="إنشاء حساب"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/sign_up_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="24dp"
+            android:hint="البريد الألكترونى"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <EditText
+            android:id="@+id/sign_up_username"
+            style="@style/register_edit_text"
+            android:hint="اسم المستخدم"
+            app:layout_constraintEnd_toEndOf="@+id/sign_up_email"
+            app:layout_constraintStart_toStartOf="@+id/sign_up_email"
+            app:layout_constraintTop_toBottomOf="@+id/sign_up_email" />
+
+        <EditText
+            android:id="@+id/sign_up_password"
+            style="@style/register_edit_text"
+            android:hint="كلمة السر"
+            app:layout_constraintEnd_toEndOf="@+id/sign_up_username"
+            app:layout_constraintStart_toStartOf="@+id/sign_up_username"
+            app:layout_constraintTop_toBottomOf="@+id/sign_up_username" />
+
+        <EditText
+            android:id="@+id/sign_up_location"
+            style="@style/register_edit_text"
+            android:hint="موقعك الحالى"
+            app:layout_constraintEnd_toEndOf="@+id/sign_up_password"
+            app:layout_constraintStart_toStartOf="@+id/sign_up_password"
+            app:layout_constraintTop_toBottomOf="@+id/sign_up_password" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/register_signup_button"
+            style="@style/register_button"
+            android:layout_marginTop="56dp"
+            android:text="إنشاء حساب"
+            app:layout_constraintEnd_toEndOf="@+id/sign_up_location"
+            app:layout_constraintStart_toStartOf="@+id/sign_up_location"
+            app:layout_constraintTop_toBottomOf="@+id/sign_up_location" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/register_signup_button"
+            app:layout_constraintStart_toStartOf="@+id/register_signup_button">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/back_to_login_button"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="سجل الدخول" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="لديك حساب بالفعل؟"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
